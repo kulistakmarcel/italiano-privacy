@@ -102,9 +102,10 @@ Cloud Firestore v **Evropské unii** a při běžném provozu EU neopouštějí.
 K předání do **Spojených států** ale dochází u těchto částí služby:
 
 - **Firebase Authentication** — služba, která vydává tvůj anonymní identifikátor,
-  neumožňuje volbu regionu a zpracovává údaje (identifikátor, IP adresa při
-  přihlášení) v USA. Týká se to každého spuštění aplikace, ne jen výjimečných
-  situací.
+  **neumožňuje volbu regionu** (na rozdíl od databáze). Nemůžeme proto zaručit,
+  že se údaje spojené s přihlášením (identifikátor, IP adresa) zpracovávají
+  v EU, a je nutné počítat s jejich předáním do USA. Týká se to každého
+  spuštění aplikace, ne jen výjimečných situací.
 - **Firebase App Check** — ověřovací tokeny.
 - **Rozpoznávání řeči v online režimu** — nahrávku zpracovává Google nebo Apple
   podle jejich vlastní infrastruktury. Přepnutím na „Jen z telefonu"
