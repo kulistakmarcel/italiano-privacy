@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title | default: site.title }}</title>
+<meta name="description" content="Zásady ochrany osobních údajů aplikace Italiano.">
+<style>
+  :root {
+    --ink: #1f2430;
+    --muted: #5b6472;
+    --line: #e3ded6;
+    --paper: #fbf9f6;
+    --accent: #a65e44;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e9e6e1;
+      --muted: #a8b0bb;
+      --line: #343b46;
+      --paper: #181b21;
+      --accent: #d99372;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 5rem;
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 {
+    font-size: 1.9rem;
+    line-height: 1.25;
+    margin: 0 0 1.5rem;
+    text-wrap: balance;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin: 2.75rem 0 .75rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+  }
+  a { color: var(--accent); }
+  code {
+    background: rgba(128,128,128,.14);
+    padding: .1em .35em;
+    border-radius: 4px;
+    font-size: .9em;
+  }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  strong { font-weight: 650; }
+  blockquote {
+    margin: 1.5rem 0;
+    padding: .5rem 0 .5rem 1rem;
+    border-left: 3px solid var(--accent);
+    color: var(--muted);
+  }
+  .scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 650; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+  footer { margin-top: 4rem; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  {{ content }}
+  <footer>Italiano — aplikace pro výuku italštiny.</footer>
+</main>
+<script>
+  // Široké tabulky se posouvají uvnitř sebe, ne celou stránkou.
+  document.querySelectorAll('table').forEach(function (t) {
+    var box = document.createElement('div');
+    box.className = 'scroll';
+    t.parentNode.insertBefore(box, t);
+    box.appendChild(t);
+  });
+</script>
+</body>
+</html>
