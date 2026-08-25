@@ -4,9 +4,9 @@ layout: default
 
 # Zásady ochrany osobních údajů — Italiano
 
-**Účinné od:** 14. 8. 2026
+**Účinné od:** 25. 8. 2026
 **Provozovatel (správce údajů):** Marcel Kulišťák
-**Kontakt:** marcelkulistak@email.cz
+**Kontakt:** italiano.vibe.app@gmail.com
 
 ---
 
@@ -132,7 +132,7 @@ nesmaže ani lokálně, aby nevznikl stav „lokálně smazáno, v cloudu zůsta
 jistotu, použij nejdřív „Smazat účet a data".
 
 **Smazání na žádost:** pokud už aplikaci nemáš nainstalovanou nebo se ti mazání
-nepodařilo, napiš na **marcelkulistak@email.cz** a data smažeme. Vyřídíme to
+nepodařilo, napiš na **italiano.vibe.app@gmail.com** a data smažeme. Vyřídíme to
 nejpozději do 30 dnů. Bez identifikátoru zařízení nedokážeme tvá data v databázi
 dohledat, proto do žádosti prosím uveď, kdy a na jakém zařízení jsi aplikaci
 používal.
@@ -182,4 +182,4 @@ v popisu v obchodě. Aktuální verze je vždy dostupná na adrese:
 
 ## 14. Kontakt
 
-Marcel Kulišťák, e-mail: **marcelkulistak@email.cz**
+Marcel Kulišťák, e-mail: **italiano.vibe.app@gmail.com**
