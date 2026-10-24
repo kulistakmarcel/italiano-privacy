@@ -4,7 +4,7 @@ layout: default
 
 # Zásady ochrany osobních údajů — Italiano
 
-**Účinné od:** 25. 8. 2026
+**Účinné od:** 24. 10. 2026 (předchozí verze 25. 8. 2026)
 **Provozovatel (správce údajů):** Marcel Kulišťák
 **Kontakt:** italiano.vibe.app@gmail.com
 
@@ -17,7 +17,8 @@ proč, jak dlouho a jaká máš práva. Zpracování probíhá v souladu s Nař�
 2016/679 (GDPR).
 
 Aplikace slouží k výuce italštiny. **Nezobrazuje reklamu, nesleduje tvoje chování
-napříč aplikacemi ani nepoužívá analytické nástroje.**
+napříč aplikacemi a nepoužívá reklamní identifikátor.** Anonymní statistiku
+používání posílá jen tehdy, když ji sám povolíš (sekce 2).
 
 ## 2. Jaké údaje zpracováváme
 
@@ -25,8 +26,9 @@ napříč aplikacemi ani nepoužívá analytické nástroje.**
   být tvým skutečným jménem; volba je na tobě.
 - **Studijní data** — postup v lekcích, skóre, body za odpovědi, kategorie naučených
   slovíček, stav dokončení lekcí a zkoušek.
-- **Nastavení aplikace** — automatické čtení, režim rozpoznávání řeči (online / jen
-  z telefonu), jazyk rozhraní.
+- **Nastavení aplikace** — automatické čtení, tempo čtení, režim rozpoznávání řeči
+  (online / jen z telefonu), jazyk rozhraní a rod, ve kterém tě aplikace oslovuje
+  (mužský, ženský, nebo neutrální — volba je na tobě).
 - **Anonymní identifikátor** — aplikace se k cloudu přihlašuje anonymně (Firebase
   Anonymous Auth). Tento identifikátor je náhodný a **není** navázán na e-mail,
   telefonní číslo ani jméno.
@@ -34,6 +36,15 @@ napříč aplikacemi ani nepoužívá analytické nástroje.**
   zpracovává **IP adresa** tvého zařízení a **ověřovací tokeny** (Firebase App
   Check, na Androidu přes Play Integrity, na iPhonu přes App Attest). Slouží
   výhradně k tomu, aby se k datům nedostal někdo, kdo nepoužívá naši aplikaci.
+- **Anonymní statistika používání (jen se souhlasem)** — když ji povolíš (okno při
+  spuštění nebo Nastavení → Soukromí a data), aplikace posílá do **Google Analytics
+  for Firebase** počty událostí: dokončená lekce Slovní zásoby, Gramatiky a školy,
+  dokončený den denního plánu, dokončené místo v Montelingua (úroveň a počet hvězd),
+  výsledek opakování slovíček (kolik slov, kolik bez chyby) a stav zásobníku.
+  Neposílá se jméno profilu, odpovědi ani text, nepoužívá se reklamní identifikátor
+  a údaje se nespojují s tvým profilem. Firebase k událostem přidává technické údaje
+  zařízení (model, verze systému a aplikace, země odvozená z IP) a náhodný
+  identifikátor instalace. Souhlas můžeš kdykoli odvolat v Nastavení.
 
 **Nezpracováváme** e-mail, telefonní číslo, polohu, kontakty ani platební údaje.
 
@@ -71,6 +82,7 @@ Google — <https://policies.google.com/privacy>, Apple — <https://www.apple.c
 | Ukládání postupu na zařízení a jeho záloha do cloudu | aby aplikace fungovala, pamatovala si, kde jsi skončil, a abys o postup nepřišel při výměně nebo obnově telefonu | **čl. 6 odst. 1 písm. b)** — plnění smlouvy (poskytnutí služby, o kterou jsi požádal instalací a používáním aplikace) |
 | Zpracování hlasu | abychom mohli vyhodnotit tvou výslovnost | **čl. 6 odst. 1 písm. a)** — souhlas, který dáváš podržením tlačítka a systémovým povolením mikrofonu |
 | Ověřovací tokeny a IP adresa | aby se k datům nedostal někdo, kdo nepoužívá naši aplikaci | **čl. 6 odst. 1 písm. f)** — oprávněný zájem na zabezpečení služby proti zneužití a neoprávněnému přístupu |
+| Anonymní statistika používání | abychom věděli, které části aplikace lidi používají a dokončují, a mohli ji zlepšovat | **čl. 6 odst. 1 písm. a)** — souhlas (okno při spuštění, odvolání v Nastavení) |
 
 ## 5. Kde jsou údaje uložené
 
@@ -83,7 +95,8 @@ Google — <https://policies.google.com/privacy>, Apple — <https://www.apple.c
 ## 6. Příjemci / zpracovatelé (třetí strany)
 
 - **Google (Firebase)** — Cloud Firestore (databáze), Firebase Authentication
-  (anonymní přihlášení), Firebase App Check (ochrana proti zneužití aplikace).
+  (anonymní přihlášení), Firebase App Check (ochrana proti zneužití aplikace),
+  Google Analytics for Firebase (anonymní statistika, jen se souhlasem).
   <https://policies.google.com/privacy>
 - **Google, resp. Apple (rozpoznávání řeči)** — podle platformy a tvého nastavení;
   viz sekce 3.
@@ -107,6 +120,8 @@ K předání do **Spojených států** ale dochází u těchto částí služby:
   v EU, a je nutné počítat s jejich předáním do USA. Týká se to každého
   spuštění aplikace, ne jen výjimečných situací.
 - **Firebase App Check** — ověřovací tokeny.
+- **Google Analytics for Firebase** — anonymní statistika používání, jen pokud jsi
+  ji povolil.
 - **Rozpoznávání řeči v online režimu** — nahrávku zpracovává Google nebo Apple
   podle jejich vlastní infrastruktury. Přepnutím na „Jen z telefonu"
   (Nastavení → Mluvení) tomuto předání zcela zabráníš.
@@ -122,6 +137,12 @@ uplatňuje **standardní smluvní doložky** schválené Evropskou komisí. Podr
 Údaje uchováváme, **dokud je sám nesmažeš**. Nemáme nastavené automatické mazání
 neaktivních účtů — aplikace tedy tvůj postup nedrží po nějakou pevnou lhůtu, ale
 ani ho sama od sebe nezahodí.
+
+**Výjimka — anonymní statistika:** události v Google Analytics se mažou
+automaticky, nejpozději po **14 měsících**. Protože nejsou spojené s tvým profilem,
+nedokážeme je dohledat ani smazat jednotlivě. Odvoláním souhlasu nebo smazáním
+účtu se v telefonu smaže identifikátor statistiky a další události se už
+neposílají.
 
 **Smazání v aplikaci:** záložka **Profil → „Smazat účet a data"**. Nevratně se
 odstraní lokální data, dokument s tvým postupem v cloudové databázi i anonymní
@@ -146,7 +167,8 @@ Máš právo na:
 - **výmaz** („právo být zapomenut") — přímo v aplikaci přes „Smazat účet a data",
 - **omezení** zpracování a **námitku** proti němu,
 - **přenositelnost** údajů,
-- **odvolání souhlasu** u zpracování hlasu (viz sekce 3).
+- **odvolání souhlasu** u zpracování hlasu (viz sekce 3) a u anonymní statistiky
+  (Nastavení → Soukromí a data).
 
 Pro uplatnění práv nebo dotazy nás kontaktuj na e-mailu uvedeném v sekci 14. Máš
 také právo podat stížnost u **Úřadu pro ochranu osobních údajů** (<https://uoou.gov.cz>).
